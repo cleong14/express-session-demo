@@ -12,6 +12,9 @@ var PORT = 3000;
 var app = express();
 // =======3=======
 
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
+
 // basic page counter (5-6)
 // =======5=======
 var count = 0;
@@ -24,7 +27,7 @@ app.get('/', function (req, res) {
 // =======6=======
 
 // app.get('/name', function (req, res) {
-  
+
 // });
 
 // =======4=======
